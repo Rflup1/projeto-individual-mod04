@@ -25,6 +25,7 @@ sexo CHAR(1),
 contato VARCHAR(22),
 cep VARCHAR(8),
 email VARCHAR(100),
+turmas_id BIGINT,
 idade INT NOT NULL,
 PRIMARY KEY(id)
 );
@@ -75,3 +76,6 @@ ADD CONSTRAINT fk_unidadesC FOREIGN KEY(unidades_id) REFERENCES unidades(id);
 
 ALTER TABLE alunos
 ADD CONSTRAINT fk_cursosA FOREIGN KEY(cursos_id) REFERENCES cursos(id);
+
+ALTER TABLE professores
+ADD CONSTRAINT fk_turmasP FOREIGN KEY(turmas_id) REFERENCES turmas(id);
