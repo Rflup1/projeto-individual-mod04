@@ -15,10 +15,10 @@ Resposta:
 
 Isso depende do que você deseja armazenar em cada entidade, por exemplo:
 
-![](https://github.com/Rflup1/projeto-individual-mod04/blob/18492222231fe7e47e12fd52a5c964ec0e95132e/SQL/diagrama.png)
+![](https://github.com/Rflup1/projeto-individual-mod04/blob/c5f691db0892527c3d8f6d8c7300c82dec092017/SQL/diagram.png)
 
 - Como essas entidades estão relacionadas?
 
 Resposta:
 
-As entidades estão relacionadas de forma que um professor tem varias turmas; um aluno tem varios cursos,logo, um aluno tem varias turmas; uma turma tem varios alunos e uma turma tem varios professores; um curso tem varias turmas e um curso tem varias unidades; uma unidade tem varios cursos.
+As entidades estão relacionadas de forma que Uma turma tem varios professores e alunos, um curso tem varias turmas e uma unidade tem varios cursos.
