@@ -61,27 +61,35 @@ FOREIGN KEY(cursos_id) REFERENCES cursos(id)
 );
 
 INSERT INTO alunos (nome, cpf, sexo, contato, cep, email, nascimento)
-VALUES
-('Peter Parker', '1112223334445', 'M', '11 11111-2222', '11122233', 'peterparker@email.com', '2000-05-05'),
-('Mary Jane', '2223334444555', 'F', '22 22222-3333', '22233344', 'maryjane@email.com', '1999-07-07');
+VALUES 
+("John Doe", "111.111.111-11", "M", "91234-5678", "12345678", "johndoe@email.com", "1995-01-01"),
+("Jane Doe", "222.222.222-22", "F", "92345-6789", "23456789", "janedoe@email.com", "1997-02-02"),
+("Jim Smith", "333.333.333-33", "M", "91234-5678", "34567890", "jimsmith@email.com", "1999-03-03");
 
+-- Inserting data into the professores table
 INSERT INTO professores (nome, cpf, sexo, contato, cep, email, nascimento)
-VALUES
-('Dr. Strange', '3334445556666', 'M', '33 33333-4444', '33344455', 'drstrange@email.com', '1969-12-13'),
-('Prof. X', '4445556666777', 'M', '44 44444-5555', '44455566', 'profx@email.com', '1960-07-14');
+VALUES 
+("Dr. Alice", "444.444.444-44", "F", "91234-5678", "45678901", "alice@email.com", "1980-04-04"),
+("Dr. Bob", "555.555.555-55", "M", "92345-6789", "56789012", "bob@email.com", "1985-05-05"),
+("Dr. Charlie", "666.666.666-66", "M", "91234-5678", "67890123", "charlie@email.com", "1990-06-06");
 
+-- Inserting data into the turmas table
 INSERT INTO turmas (nome, turno, numero_de_alunos, aluno_id, professor_id)
-VALUES
-('Class A', 'evening', 15, 1, 2),
-('Class B', 'morning', 25, 2, 1);
+VALUES 
+("Turma A", "Manhã", 20, 1, 1),
+("Turma B", "Tarde", 25, 2, 2),
+("Turma C", "Noite", 30, 3, 3);
 
+-- Inserting data into the cursos table
 INSERT INTO cursos (nome, descricao, data_comeco, data_termino, turmas_id)
-VALUES
-('History 101', 'Intro to History', '2022-03-01', '2022-11-30', 1),
-('English 102', 'Intro to English', '2022-04-01', '2022-08-31', 2);
+VALUES 
+("Curso 1", "Descrição do curso 1", "2023-01-01", "2023-06-30", 1),
+("Curso 2", "Descrição do curso 2", "2023-07-01", "2023-12-31", 2),
+("Curso 3", "Descrição do curso 3", "2024-01-01", "2024-06-30", 3);
 
+-- Inserting data into the unidades table
 INSERT INTO unidades (nome, cep, cursos_id)
-VALUES
-('Campus C', '22233344', 1),
-('Campus D', '44455566', 2);
-
+VALUES 
+("Unidade 1", "12345678", 1),
+("Unidade 2", "23456789", 2),
+("Unidade 3", "34567890", 3);
